@@ -7,7 +7,7 @@ function BlogPosts() {
 
   const fetchBlogPosts = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/blogposts');
+      const response = await axios.get('https://ddu-insider-api.onrender.com/api/blogposts');
       setBlogPosts(response.data[0]);
     } catch (error) {
       console.error('Error fetching blog posts:', error);
